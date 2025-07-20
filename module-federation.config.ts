@@ -3,7 +3,7 @@ dotenv.config();
 
 const remoteUrl =
   process.env.REMOTE_CRYPTO_APP_URL ||
-  "http://localhost:3002/remoteEntry.js";
+  "http://localhost:8082/remoteEntry.js";
 
 export const mfConfig = {
   name: "mf_crypto_host",
