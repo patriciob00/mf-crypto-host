@@ -1,0 +1,21 @@
+.real-time-screen {
+  display: flex;
+  flex-direction: row;
+  padding: clamp(1rem, 1.5rem, 2rem);
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .card:not(:first-of-type) {
+    height: 50%;
+
+    &.crypto-card-highlight {
+      max-height: 50%;
+      min-height: 50%;
+      flex: 1;
+    }
+  }
+}
