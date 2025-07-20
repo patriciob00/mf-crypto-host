@@ -11,6 +11,9 @@ importers:
       '@module-federation/enhanced':
         specifier: ^0.8.9
         version: 0.8.12(@rspack/core@1.2.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)(webpack@5.100.2)
+      dotenv:
+        specifier: ^17.2.0
+        version: 17.2.0
       react:
         specifier: ^19.0.0
         version: 19.1.0
@@ -36,6 +39,12 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4.0.3
         version: 4.1.11
+      '@types/dotenv':
+        specifier: ^8.2.3
+        version: 8.2.3
+      '@types/node':
+        specifier: ^24.0.15
+        version: 24.0.15
       '@types/react':
         specifier: ^19.0.0
         version: 19.1.8
@@ -550,6 +559,10 @@ packages:
 
   '@types/connect@3.4.38':
     resolution: {integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==}
+
+  '@types/dotenv@8.2.3':
+    resolution: {integrity: sha512-g2FXjlDX/cYuc5CiQvyU/6kkbP1JtmGzh0obW50zD7OKeILVL0NSpPWLXVfqoAGQjom2/SLLx9zHq0KXvD6mbw==}
+    deprecated: This is a stub types definition. dotenv provides its own type definitions, so you do not need this installed.
 
   '@types/eslint-scope@3.7.7':
     resolution: {integrity: sha512-MzMFlSLBqNF2gcHWO0G1vP/YQyfvrxZ0bF+u7mzUdZ1/xK4A4sru+nraZz5i3iEIk1l1uyicaDVTB4QbbEkAYg==}
@@ -1098,6 +1111,10 @@ packages:
   dns-packet@5.6.1:
     resolution: {integrity: sha512-l4gcSouhcgIKRvyy99RNVOgxXiicE+2jZoNmaNmZ6JXiGajBOJAesk1OBlJuM5k2c+eudGdLxDqXuPCKIj6kpw==}
     engines: {node: '>=6'}
+
+  dotenv@17.2.0:
+    resolution: {integrity: sha512-Q4sgBT60gzd0BB0lSyYD3xM4YxrXA9y4uBDof1JNYGzOXrQdQ6yX+7XIAqoFOGQFOTK1D3Hts5OllpxMDZFONQ==}
+    engines: {node: '>=12'}
 
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
@@ -3299,6 +3316,10 @@ snapshots:
     dependencies:
       '@types/node': 24.0.15
 
+  '@types/dotenv@8.2.3':
+    dependencies:
+      dotenv: 17.2.0
+
   '@types/eslint-scope@3.7.7':
     dependencies:
       '@types/eslint': 9.6.1
@@ -3344,7 +3365,7 @@ snapshots:
 
   '@types/node-fetch@2.6.12':
     dependencies:
-      '@types/node': 18.19.120
+      '@types/node': 24.0.15
       form-data: 4.0.4
 
   '@types/node-forge@1.3.13':
@@ -3855,6 +3876,8 @@ snapshots:
   dns-packet@5.6.1:
     dependencies:
       '@leichtgewicht/ip-codec': 2.0.5
+
+  dotenv@17.2.0: {}
 
   dunder-proto@1.0.1:
     dependencies:

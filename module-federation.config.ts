@@ -1,8 +1,15 @@
+import * as dotenv from "dotenv";
+dotenv.config();
+
+const remoteUrl =
+  process.env.REMOTE_CRYPTO_APP_URL ||
+  "http://localhost:3002/remoteEntry.js";
+
 export const mfConfig = {
   name: "mf_crypto_host",
   exposes: {},
   remotes: {
-    remote_crypto_app: "remote_crypto_app@http://localhost:8082/remoteEntry.js"
+    remote_crypto_app: `remote_crypto_app@${remoteUrl}`,
   },
   shared: ["react", "react-dom"],
 };
