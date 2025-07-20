@@ -1,11 +1,11 @@
 import React, { HTMLAttributes, lazy, PropsWithChildren } from 'react'
-import { Header } from '../../components/Header';
+import { Header } from '../../components/header';
 import { BrowserRouter } from 'react-router-dom';
 
 const BackgroundWrapper = lazy(() => import("remote_crypto_app/BackgroundWrapper"));
 
 import './styles.scss'
-import Content from '../../components/Content';
+import Content from '../../components/content';
 
 type Props = PropsWithChildren<HTMLAttributes<HTMLDivElement>>
 

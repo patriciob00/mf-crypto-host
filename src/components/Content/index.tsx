@@ -1,6 +1,6 @@
 import React, { HTMLAttributes, PropsWithChildren } from 'react';
 import { Outlet, Route, Routes } from 'react-router-dom';
-import Prices from '../../pages/Prices/index.tsx';
+import Prices from '../../pages/prices/index.tsx';
 import Dashboard from '../../pages/dashboard/index.tsx';
 
 import './styles.scss'
